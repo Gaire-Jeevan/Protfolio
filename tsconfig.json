@@ -3,5 +3,10 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react", // or "react-jsx" for React 17+
+    "outDir": "./dist" // or your preferred output directory
+    // other options...
+  }
 }
