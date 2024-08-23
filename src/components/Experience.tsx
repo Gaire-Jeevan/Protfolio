@@ -1,10 +1,9 @@
-import React from "react";
-import html from "../../public/assets/experience/html.png";
-import css from "../../public/assets/experience/css.png";
-import javascript from "../../public/assets/experience/javascript.png";
-import reactImage from "../../public/assets/experience/react.png";
-import github from "../../public/assets/experience/github.png";
-import tailwind from "../../public/assets/experience/tailwind.png";
+import html from "/assets/experience/html.png";
+import css from "/assets/experience/css.png";
+import javascript from "/assets/experience/javascript.png";
+import reactImage from "/assets/experience/react.png";
+import github from "/assets/experience/github.png";
+import tailwind from "/assets/experience/tailwind.png";
 
 const Experience = () => {
   const techs = [
@@ -59,14 +58,19 @@ const Experience = () => {
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-8">
-
           {techs.map(({ id, src, title, style }) => (
-            <div key={id} className={"shadow-md hover:scale-105 duration-500 py-2 rounded-lg" + " " + style}>
+            <div
+              key={id}
+              className={
+                "shadow-md hover:scale-105 duration-500 py-2 rounded-lg" +
+                " " +
+                style
+              }
+            >
               <img src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}
-
         </div>
       </div>
     </div>
